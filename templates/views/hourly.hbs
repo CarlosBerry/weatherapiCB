@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="now">Now</a></li>
+                <li><a href="hourly">Hourly</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   {{>header}}
+  <h1>MétéoWiki</h1>
+  <h2>{{date}}</h2>
+  <h2>{{ville}}</h2>
+  
+
+  <div>
+    
+      <form>
+        <label for="fname">Recherche</label>
+        <input type="text" id="recherche" name="recherche">
+        <input type="submit" value="Submit">
+     
+  </div>
+  <div>
+   
+      <a href="/weather/now">Condition actuelles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="/weather/hourly">Prochaines heures></a>
+     
+        
+    </form>
+    
+  </div>
+  <h3>{{wttrInfo.nearest_area.[0].areaName.[0].value}}</h3>
+  <p>Prochaines heures :</p>
+  
+  
+  <ul>
+               {{#each wttrInfo.weather.[0].hourly}}
+    Time: {{time}}
+    <br>     
+    <li>temp_C:{{tempC}}</li>
+    <li>temp_F:{{tempF}}</li>
+    <li>FeelsLikeC:{{FeelsLikeC}}</li>
+    <li>FeelsLikeF:{{FeelsLikeF}}</li>
+    <li>Pressure:{{pressure}}</li>
+    <li>UV Index: {{uvIndex}}</li>
+    <br>
+    <br>
+
+           
+             {{/each}}
+    </ul>
+   
+   <div>
+     {{>cards}}
+  </div>
+</body>
+</html>

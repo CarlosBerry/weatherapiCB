@@ -1,0 +1,157 @@
+[title]
+{
+    background: rgb(39,146,171);
+    background: linear-gradient(90deg, rgba(39,146,171,0) 0%, rgba(95,250,242,1) 87%);
+}
+body
+{
+    background: rgb(142, 140, 182);
+    background: linear-gradient(90deg, rgb(42, 33, 212) 0%, rgba(221,245,220,1) 35%, rgba(0,212,255,1) 100%);
+    color: rgb(225, 233, 231);
+    font-size: .8em;
+    line-height: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    
+}
+div
+{
+    background-color: rgb(247, 240, 247);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+input,label 
+{
+    margin: .4rem 0;
+    color: blue;
+    text-emphasis-color: green;
+}
+nav footer
+{
+    color: rgb(18, 10, 97);
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+    border-radius: 2px solid;
+}
+h1
+{
+    color:rgb(30, 18, 134);
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: capitalize;
+     
+
+}
+h2
+{
+    color:rgb(10, 17, 71);
+    font-size: 1.6em;
+    padding: 10px;
+    letter-spacing: .3em;
+    font-weight: lighter;
+    line-height: 115%;
+    background-color: burlywood;
+}
+h3
+{
+    color:rgb(8, 8, 8);
+    font-size: 1.3em;
+    font-weight: 550%;
+}
+hr
+{
+    border-top: 3px rgb(79, 37, 219) solid;
+    border-left-width   : 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+em
+{
+    font-variant-caps: small-caps;
+    font-style: oblique;
+    font-weight: bolder;
+}
+strong
+{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+dfn,abbr
+{
+    font-weight: bolder;
+    font-style: oblique;
+    color: darkblue ;
+    
+}
+iframe
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ul
+{
+    line-height: 1.5em;
+    list-style: square;
+    color: aliceblue;
+}
+ol
+{
+    line-height: 1.5em;
+}
+
+q
+{
+    color: darkmagenta;
+}
+sup
+{
+    vertical-align: .3em;
+}
+cite
+{
+    color: rgb(226, 43, 144);
+    font-style: italic;
+}
+blockquote
+{
+    color: brown;
+    font-style: italic;
+    line-height: 150%;
+}
+small
+{
+    color: rgb(7, 41, 41);
+    font-size: .7em;
+}
+
+.intro
+{
+    color: rgb(1, 4, 20);
+    font-weight: 900;
+}
+nav a:link
+{
+    color:rgb(255, 0, 34);
+    text-decoration: none;
+}
+nav a:visited
+{
+    color:brown;
+
+}
+nav a:hover
+{
+    color: chartreuse;
+}
+footer
+{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
